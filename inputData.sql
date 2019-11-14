@@ -86,21 +86,21 @@ INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (133, 1, 4, 329);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (139, 2, 2, 330);
 
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 207, 1, 112, 400);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 211, 2, 117, 401);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 213, 1, 119, 402);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 214, 2, 120, 403);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 204, 1, 105, 404);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 203, 3, 104, 405);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 205, 2, 106, 406);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 212, 3, 118, 407);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 215, 3, 122, 408);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 200, 1, 102, 409);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 210, 1, 116, 410);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 209, 3, 114, 411);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 208, 2, 113, 412);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 202, 2, 103, 413);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (NULL, 2019-11-14, 206, 3, 108, 415);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-14, 2019-11-14, 207, 1, 112, 400);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-15, 2019-11-14, 211, 2, 117, 401);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-16, 2019-11-14, 213, 1, 119, 402);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-17, 2019-11-14, 214, 2, 120, 403);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-18, 2019-11-14, 204, 1, 105, 404);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-19, 2019-11-14, 203, 3, 104, 405);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-20, 2019-11-14, 205, 2, 106, 406);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-21, 2019-11-14, 212, 3, 118, 407);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-22, 2019-11-14, 215, 3, 122, 408);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-01, 2019-11-14, 200, 1, 102, 409);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-02, 2019-11-14, 210, 1, 116, 410);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-03, 2019-11-14, 209, 3, 114, 411);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-04, 2019-11-14, 208, 2, 113, 412);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-05, 2019-11-14, 202, 2, 103, 413);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-11-06, 2019-11-14, 206, 3, 108, 415);
 
 INSERT INTO `Borrower` (`Name`, `address`, `phone`, `BorrowerID`) VALUES ('Prof. Kelvin Beatty I', '17439 Kub Streets', 99110789, 200);
 INSERT INTO `Borrower` (`Name`, `address`, `phone`, `BorrowerID`) VALUES ('Duncan Johnson', '39390 Maia Summit Apt. 945', 95617290, 201);
