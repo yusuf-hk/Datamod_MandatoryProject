@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Author;
+DROP TABLE IF EXISTS Authors;
 DROP TABLE IF EXISTS Book;
 DROP TABLE IF EXISTS LibraryBook;
 DROP TABLE IF EXISTS LibraryBranch;
@@ -6,9 +6,9 @@ DROP TABLE IF EXISTS Borrower;
 DROP TABLE IF EXISTS Loan;
 DROP TABLE IF EXISTS Library;
 
-CREATE TABLE `Author` (
-  `Name` varchar(50),
-  PRIMARY KEY (`Name`)
+CREATE TABLE `Authors` (
+  name varchar(50),
+  PRIMARY KEY (name)
 );
 
 CREATE TABLE `Book` (
@@ -16,8 +16,8 @@ CREATE TABLE `Book` (
   `Publisher` varchar(50),
   `Author` varchar(50),
   `BookID` int,
-  PRIMARY KEY (`BookID`),
-  FOREIGN KEY (Author) REFERENCES Author(Name)
+  PRIMARY KEY (BookID),
+  FOREIGN KEY (Author) REFERENCES Authors(name)
 );
 
 CREATE TABLE `LibraryBook` (
@@ -25,7 +25,7 @@ CREATE TABLE `LibraryBook` (
   `LibraryBranchID` int,
   `copies` int,
   `LibraryBookID` int,
-  PRIMARY KEY (`LibraryBookID`),
+  PRIMARY KEY (LibraryBookID),
   FOREIGN KEY (bookID) REFERENCES Book(BookID),
   FOREIGN KEY (LibraryBranchID) REFERENCES LibraryBranch(LibraryBranchID)
 );
@@ -35,7 +35,7 @@ CREATE TABLE `LibraryBranch` (
   `Address` varchar(50),
   `LibraryBranchID` int,
   `LibraryID` int,
-  PRIMARY KEY (`LibraryBranchID`),
+  PRIMARY KEY (LibraryBranchID),
   FOREIGN KEY (LibraryID) REFERENCES Library(LibraryID)
 );
 
@@ -44,7 +44,7 @@ CREATE TABLE `Borrower` (
   `address` varchar(50),
   `phone` int,
   `BorrowerID` int,
-  PRIMARY KEY (`BorrowerID`)
+  PRIMARY KEY (BorrowerID)
 );
 
 CREATE TABLE `Loan` (
@@ -63,5 +63,5 @@ CREATE TABLE `Loan` (
 CREATE TABLE `Library` (
   `Name` varchar(50),
   `LibraryID` int,
-  PRIMARY KEY (`LibraryID`)
+  PRIMARY KEY (LibraryID)
 );
