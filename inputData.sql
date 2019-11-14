@@ -1,8 +1,8 @@
 INSERT INTO 'Library' (Name, LibraryID) VALUES ('NTNU', 1);
 
-INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Ålesund', 'Larsgårdsvegen 2', 10, 1);
-INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Gjøvik', 'Teknologivegen 22', 20, 1);
-INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Trondheim', 'Høgskoleringen 1', 30, 1);
+INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Ålesund', 'Larsgårdsvegen 2', 1, 1);
+INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Gjøvik', 'Teknologivegen 22', 2, 1);
+INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Trondheim', 'Høgskoleringen 1', 3, 1);
 
 INSERT INTO `Book` (`Title`, `Publisher`, `Author`, `BookID`) VALUES ('Seamless object-oriented workforce', 'Legros PLC', 'Alf', 102);
 INSERT INTO `Book` (`Title`, `Publisher`, `Author`, `BookID`) VALUES ('Inverse zeroadministration workforce', 'Swaniawski-Mitchell', 'Alf', 103);
