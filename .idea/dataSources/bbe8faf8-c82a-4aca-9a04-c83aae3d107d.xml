@@ -28,7 +28,6 @@
     <index id="16" parent="6" name="sqlite_autoindex_Author_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="17" parent="6">
@@ -55,7 +54,6 @@
     <index id="22" parent="7" name="sqlite_autoindex_Book_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>BookID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="23" parent="7">
@@ -87,7 +85,6 @@
     <index id="29" parent="8" name="sqlite_autoindex_Borrower_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>BorrowerID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="30" parent="8">
@@ -119,7 +116,6 @@
     <index id="36" parent="10" name="sqlite_autoindex_Library_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LibraryID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="37" parent="10">
@@ -146,7 +142,6 @@
     <index id="42" parent="11" name="sqlite_autoindex_LibraryBook_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LibraryBookID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="43" parent="11">
@@ -183,7 +178,6 @@
     <index id="50" parent="12" name="sqlite_autoindex_LibraryBranch_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LibraryBranchID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="51" parent="12">
@@ -223,7 +217,6 @@
     <index id="59" parent="13" name="sqlite_autoindex_Loan_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LoanID</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="60" parent="13">
