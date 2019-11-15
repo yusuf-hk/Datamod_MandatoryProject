@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Authors;
+DROP TABLE IF EXISTS Author;
 DROP TABLE IF EXISTS Book;
 DROP TABLE IF EXISTS LibraryBook;
 DROP TABLE IF EXISTS LibraryBranch;
@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS Borrower;
 DROP TABLE IF EXISTS Loan;
 DROP TABLE IF EXISTS Library;
 
-CREATE TABLE `Authors` (
+CREATE TABLE `Author` (
   name varchar(50),
   PRIMARY KEY (name)
 );
@@ -17,7 +17,7 @@ CREATE TABLE `Book` (
   `Author` varchar(50),
   `BookID` int,
   PRIMARY KEY (BookID),
-  FOREIGN KEY (Author) REFERENCES Authors(name)
+  FOREIGN KEY (Author) REFERENCES Author(name)
 );
 
 CREATE TABLE `LibraryBook` (
