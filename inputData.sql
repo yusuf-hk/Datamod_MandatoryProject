@@ -123,11 +123,11 @@ INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`,
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-06-05, 2019-11-14, 202, 2, 103, 413);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-06-06, 2019-11-14, 206, 3, 108, 415);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-07-20, 2019-11-14, 243, 2, 105, 416);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-07-21, 2019-11-14, 242, 3, 111, 417);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-08-22, 2019-11-14, 245, 2, 110, 418);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-08-01, 2019-11-14, 200, 3, 122, 419);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-09-02, 2019-11-14, 241, 2, 117, 420);
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-03, 2019-11-14, 240, 1, 119, 421);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-07-21, 2019-11-15, 242, 3, 111, 417);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-08-22, 2019-11-15, 245, 2, 110, 418);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-08-01, 2019-11-15, 200, 3, 122, 419);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-09-02, 2019-11-15, 241, 2, 117, 420);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-03, 2019-11-15, 240, 1, 119, 421);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-10-04, 2019-11-14, 240, 2, 119, 422);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-02-05, 2019-11-14, 202, 1, 103, 423);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2019-03-06, 2019-11-14, 244, 3, 108, 424);
