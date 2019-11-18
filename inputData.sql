@@ -79,11 +79,11 @@ INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (122, 2, 0, 341);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (116, 2, 6, 342);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (103, 1, 4, 343);
-INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (109, 1, 5, 344);
+INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (109, 2, 5, 344);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (103, 1, 3, 345);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (111, 3, 6, 346);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (127, 1, 2, 347);
-INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (109, 1, 7, 348);
+INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (109, 3, 7, 348);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (125, 2, 7, 349);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (100, 1, 9, 350);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (118, 1, 7, 351);
@@ -101,7 +101,7 @@ INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (119, 2, 0, 363);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (104, 2, 6, 364);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (117, 3, 9, 365);
-INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (112, 1, 8, 366);
+INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (112, 3, 8, 366);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (113, 2, 3, 367);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (127, 1, 9, 368);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (130, 3, 9, 369);
