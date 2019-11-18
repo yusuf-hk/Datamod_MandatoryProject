@@ -1,7 +1,7 @@
 /*
  Task 1
  */
-SELECT Name, sum(copies)
+SELECT Name as Library_Branch_Name, Address, sum(copies) as sum
 FROM LibraryBook
 INNER JOIN Book B on LibraryBook.bookID = B.BookID
 INNER JOIN LibraryBranch LB on LibraryBook.LibraryBranchID = LB.LibraryBranchID
