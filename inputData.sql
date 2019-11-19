@@ -107,6 +107,8 @@ INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (130, 1, 9, 369);
 INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID`) VALUES (123, 2, 9, 370);
 
+/* Custom db entries */
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES ('2019/19/11', '2019/12/23', 201, 1, 100, 481);
 
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 247, 2, 118, 430);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 209, 3, 102, 431);
