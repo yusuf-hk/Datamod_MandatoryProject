@@ -1,17 +1,17 @@
 DROP TABLE IF EXISTS Author;
 CREATE TABLE "Author"
 (
-  name varchar(50),
+  name varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (name)
 );
 
 DROP TABLE IF EXISTS Book;
 CREATE TABLE "Book"
 (
-  "Title" varchar(50),
-  "Publisher" varchar(50),
-  "Author" varchar(50),
-  "BookID" int,
+  "Title" varchar(50) NOT NULL DEFAULT '',
+  "Publisher" varchar(50) NOT NULL DEFAULT '',
+  "Author" varchar(50) NOT NULL DEFAULT '',
+  "BookID" int NOT NULL,
   PRIMARY KEY (BookID),
   FOREIGN KEY (Author) REFERENCES Author(name)
 );
@@ -19,10 +19,10 @@ CREATE TABLE "Book"
 DROP TABLE IF EXISTS LibraryBook;
 CREATE TABLE "LibraryBook"
 (
-  "bookID" int,
-  "LibraryBranchID" int,
-  "copies" int,
-  "LibraryBookID" int,
+  "bookID" int NOT NULL,
+  "LibraryBranchID" int NOT NULL,
+  "copies" int NOT NULL,
+  "LibraryBookID" int NOT NULL,
   PRIMARY KEY (LibraryBookID),
   FOREIGN KEY (bookID) REFERENCES Book(BookID),
   FOREIGN KEY (LibraryBranchID) REFERENCES LibraryBranch(LibraryBranchID)
@@ -31,10 +31,10 @@ CREATE TABLE "LibraryBook"
 DROP TABLE IF EXISTS LibraryBranch;
 CREATE TABLE "LibraryBranch"
 (
-  "Name" varchar(50),
-  "Address" varchar(50),
-  "LibraryBranchID" int,
-  "LibraryID" int,
+  "Name" varchar(50) NOT NULL DEFAULT '',
+  "Address" varchar(50) NOT NULL DEFAULT '',
+  "LibraryBranchID" int NOT NULL,
+  "LibraryID" int NOT NULL,
   PRIMARY KEY (LibraryBranchID),
   FOREIGN KEY (LibraryID) REFERENCES Library(LibraryID)
 );
@@ -42,22 +42,22 @@ CREATE TABLE "LibraryBranch"
 DROP TABLE IF EXISTS Borrower;
 CREATE TABLE "Borrower"
 (
-  "Name" varchar(50),
-  "address" varchar(50),
-  "phone" int,
-  "BorrowerID" int,
+  "Name" varchar(50) NOT NULL DEFAULT '',
+  "address" varchar(50) NOT NULL DEFAULT '',
+  "phone" int NOT NULL,
+  "BorrowerID" int NOT NULL ,
   PRIMARY KEY (BorrowerID)
 );
 
 DROP TABLE IF EXISTS Loan;
 CREATE TABLE "Loan"
 (
-  "Lending Date" timestamp,
-  "Due Date" timestamp,
-  "BorrowerID" int,
-  "LibraryBranchID" int,
-  "bookID" int,
-  "LoanID" int,
+  "Lending Date" timestamp NOT NULL ,
+  "Due Date" timestamp NOT NULL,
+  "BorrowerID" int NOT NULL ,
+  "LibraryBranchID" int NOT NULL,
+  "bookID" int NOT NULL ,
+  "LoanID" int NOT NULL ,
   PRIMARY KEY (LoanID),
   FOREIGN KEY (BorrowerID) REFERENCES Borrower(BorrowerID),
   FOREIGN KEY (LibraryBranchID) REFERENCES LibraryBranch(LibraryBranchID),
@@ -67,7 +67,7 @@ CREATE TABLE "Loan"
 DROP TABLE IF EXISTS Library;
 CREATE TABLE "Library"
 (
-  "Name" varchar(50),
-  "LibraryID" int,
+  "Name" varchar(50) NOT NULL DEFAULT '',
+  "LibraryID" int NOT NULL,
   PRIMARY KEY (LibraryID)
 );
