@@ -1,3 +1,63 @@
+CREATE TABLE `Author` (
+  name varchar(50),
+  PRIMARY KEY (name)
+);
+
+CREATE TABLE `Book` (
+  `Title` varchar(50),
+  `Publisher` varchar(50),
+  `Author` varchar(50),
+  `BookID` int,
+  PRIMARY KEY (BookID),
+  FOREIGN KEY (Author) REFERENCES Author(name)
+);
+
+CREATE TABLE `LibraryBook` (
+  `bookID` int,
+  `LibraryBranchID` int,
+  `copies` int,
+  `LibraryBookID` int,
+  PRIMARY KEY (LibraryBookID),
+  FOREIGN KEY (bookID) REFERENCES Book(BookID),
+  FOREIGN KEY (LibraryBranchID) REFERENCES LibraryBranch(LibraryBranchID)
+);
+
+CREATE TABLE `LibraryBranch` (
+  `Name` varchar(50),
+  `Address` varchar(50),
+  `LibraryBranchID` int,
+  `LibraryID` int,
+  PRIMARY KEY (LibraryBranchID),
+  FOREIGN KEY (LibraryID) REFERENCES Library(LibraryID)
+);
+
+CREATE TABLE `Borrower` (
+  `Name` varchar(50),
+  `address` varchar(50),
+  `phone` int,
+  `BorrowerID` int,
+  PRIMARY KEY (BorrowerID)
+);
+
+CREATE TABLE `Loan` (
+  `Lending Date` datetime,
+  `Due Date` datetime,
+  `BorrowerID` int,
+  `LibraryBranchID` int,
+  `bookID` int,
+  `LoanID` int,
+  PRIMARY KEY (LoanID),
+  FOREIGN KEY (BorrowerID) REFERENCES Borrower(BorrowerID),
+  FOREIGN KEY (LibraryBranchID) REFERENCES LibraryBranch(LibraryBranchID),
+  FOREIGN KEY (bookID) REFERENCES LibraryBook(bookID)
+);
+
+CREATE TABLE `Library` (
+  `Name` varchar(50),
+  `LibraryID` int,
+  PRIMARY KEY (LibraryID)
+);
+
 INSERT INTO 'Library' (Name, LibraryID) VALUES ('NTNU', 1);
 
 INSERT INTO LibraryBranch (Name, Address, LibraryBranchID, LibraryID) VALUES ('Ålesund', 'Larsgårdsvegen 2', 1, 1);
@@ -110,7 +170,7 @@ INSERT INTO `LibraryBook` (`bookID`, `LibraryBranchID`, `copies`, `LibraryBookID
 /* Custom db entries */
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES ('2019/19/11', '2019/12/23', 201, 1, 100, 481);
 
-INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 247, 2, 118, 430);
+INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES ('2018/10/10', 2019-10-10, 247, 2, 118, 430);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 209, 3, 102, 431);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 202, 2, 100, 432);
 INSERT INTO `Loan` (`Lending Date`, `Due Date`, `BorrowerID`, `LibraryBranchID`, `bookID`, `LoanID`) VALUES (2018-10-10, 2019-10-10, 212, 3, 103, 433);
@@ -233,3 +293,11 @@ INSERT INTO `Author` (`name`) VALUES ('Octavia Walsh');
 INSERT INTO `Author` (`name`) VALUES ('Prof. Margaretta Maggio IV');
 INSERT INTO `Author` (`name`) VALUES ('Trenton Halvorson');
 INSERT INTO `Author` (`name`) VALUES ('Wilhelmine Mertz Sr.');
+
+Select * from Author;
+Select * from Book;
+Select * from Borrower;
+Select * from Library;
+Select * from LibraryBook;
+Select * from LibraryBranch;
+Select * from Loan;
